@@ -24,8 +24,8 @@ public class DexterityVestValidation {
 	@Test
 	public void testOneCycle() {
 		qU.updateQuality();
-		Assert.assertEquals("Test 1", 9, qU.items.get(0).sellIn);
-		Assert.assertEquals("Test 1", 19, qU.items.get(0).quality);
+		Assert.assertEquals("Test Sell-In 1", 9, qU.items.get(0).sellIn);
+		Assert.assertEquals("Test Quality 1", 19, qU.items.get(0).quality);
 	}
 	
 	@Test
@@ -33,8 +33,8 @@ public class DexterityVestValidation {
 		for(int i = 0; i < 5; i++) {
 			qU.updateQuality();
 		}
-		Assert.assertEquals("Test 5 times", 5, qU.items.get(0).sellIn);
-		Assert.assertEquals("Test 5 times", 15, qU.items.get(0).quality);
+		Assert.assertEquals("Test Sell-In 5 times", 5, qU.items.get(0).sellIn);
+		Assert.assertEquals("Test Quality 5 times", 15, qU.items.get(0).quality);
 	}
 	
 	@Test
@@ -42,8 +42,8 @@ public class DexterityVestValidation {
 		for(int i = 0; i < 21; i++) {
 			qU.updateQuality();
 		}
-		Assert.assertEquals("Test 5 times", -11, qU.items.get(0).sellIn);
-		Assert.assertEquals("Test 5 times", 0, qU.items.get(0).quality);
+		Assert.assertEquals("Test Sell-In 21 times", -11, qU.items.get(0).sellIn);
+		Assert.assertEquals("Test Quality 21 times", 0, qU.items.get(0).quality);
 	}
 
 }
