@@ -25,15 +25,6 @@ public class QualityUpdater {
 		 * I believe that it functions identically to the original code
 		 * And I added in the additional code to make Conjured items behave correctly
 		 */
-		
-		// For testing purposes
-		for (int i = 0; i < items.size(); i++) {
-			System.out.print("Name: " + items.get(i).name);
-			System.out.print(", Sell-In: " + items.get(i).sellIn);
-			System.out.println(", Quality: " + items.get(i).quality);
-		}
-		System.out.println("**************************************");
-		
 		for (int i = 0; i < items.size(); i++) {
 			// If it's Sulfuras, just skip it entirely
 			if (!items.get(i).name.equals("Sulfuras")) {
@@ -93,10 +84,6 @@ public class QualityUpdater {
 					}
 				} // End else-if
 			}
-			// For testing purposes
-			System.out.print("Name: " + items.get(i).name);
-			System.out.print(", Sell-In: " + items.get(i).sellIn);
-			System.out.println(", Quality: " + items.get(i).quality);
 		}
 	}
 }
